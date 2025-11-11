@@ -105,7 +105,6 @@ const dict: Record<string, string> = {
   '6': 'ю',
   z: 'я',
 };
-// @formatter:on
 
 const CAESAR_SHIFT = 5;
 const CAESAR_ALPHABET = 'абвгдежзийклмнопрстуфхцчшщъыьэюя';
