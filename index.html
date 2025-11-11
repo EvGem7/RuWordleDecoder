@@ -1,30 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WS playground</title>
-  <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Decoder</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<main id="app">
-  <h1 class="title">
-    Thank you for trying it out. <br /> Your first project is up and running
-    now.
-  </h1>
-  <section class="counter">
-    <div class="counter-info">
-      <p class="counter-text">Counter is</p>
-      <p class="counter-value" id="counter-value"></p>
+<div class="container">
+    <h1 class="title">Wordle Decoder</h1>
+
+    <label class="label" for="wordle-input">Paste Wordle link or word_id here:</label>
+    <input
+            id="wordle-input"
+            type="text"
+            placeholder="Paste Wordle link here:"
+            class="input"
+    />
+
+    <div class="results">
+        <h2 class="results-title">Decoding Results</h2>
+        <pre class="results-text" id="results-text">Waiting for input...</pre>
     </div>
-    <div class="counter-interaction">
-      <button id="increaseByOne" type="button">+1</button>
-      <button id="increaseByTwo" type="button">+2</button>
-      <button id="decreaseByOne" type="button">-1</button>
-      <button id="decreaseByTwo" type="button">-2</button>
-    </div>
-  </section>
-</main>
+</div>
 <script type="module" src="/src/main.ts"></script>
 </body>
 </html>
